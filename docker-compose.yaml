@@ -8,4 +8,9 @@ services:
     - "36541:36541"
     volumes:
       - ./:/workdir
+    privileged: true  
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
 

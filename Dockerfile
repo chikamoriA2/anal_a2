@@ -2,7 +2,12 @@ FROM continuumio/anaconda3
 
 RUN pip install --upgrade pip
 
-RUN apt-get update && apt-get install -y zip unzip jq
+RUN apt-get update && apt-get install -y zip unzip jq vim htop 
+RUN apt-get install -y parallel
+RUN apt-get install -y sra-toolkit
+
+COPY ./.alias /root
+RUN cat /root/.alias >> /root/.bashrc
 
 WORKDIR /workdir
 

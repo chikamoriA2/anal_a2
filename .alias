@@ -1,0 +1,19 @@
+alias g="git"
+alias gs="git status"
+alias gb="git branch"
+alias gc="git checkout"
+alias ga.="git add ."
+alias gcm="git commit -m"
+alias gcmam="git commit --amend"
+alias gps="git push"
+alias gpsoh="git push origin HEAD"
+alias gfo="git fetch origin"
+alias gplo="git pull origin"
+alias glo="git log --oneline"
+alias grl="git reflog"
+
+alias ll="ls -al"
+
+
+
+
